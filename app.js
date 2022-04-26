@@ -14,5 +14,25 @@ console.log(fullName);
 let city = "Buenos Aires";
 let favorite = "video games";
 let favorite2 = "reading"
-let myStory = `Hello, my name is ${fullName}. I am currently living in ${city}. My favorite pastimes are playing ${favorite} and ${favorite2}`;
+let myStory = `Hell0, my name is ${fullName}. I am currently living in ${city}. My favorite pastimes are playing ${favorite} and ${favorite2}`;
 console.log(myStory);
+
+var plane = "plane";
+var sevenFiftySeven = "757";
+var drone = "drone";
+var shellPlane = null;
+var nothing = "";
+
+var flyingObjects = [plane, sevenFiftySeven, drone, shellPlane, nothing];
+
+function takeOff(objects){
+  for (i = 0; i < objects.length; i++){
+    if (objects[i]){
+      console.log(objects[i] + " is preparing for takeoff!");
+      }
+    else {
+      console.log(`${objects[i]} cannot fly`);
+    }
+  }
+}
+takeOff(flyingObjects);
